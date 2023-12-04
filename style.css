@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* commentaire */
+    font-family: monospace;
+}
+
+body{
+    background:#cfcfcf;
+}
+
+.topbanner{
+display: flex;
+justify-content: space-between;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: grey;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.mainlogo{
+    width: 6em;
+}
+
+
+.planets{
+    display: flex;
+    justify-content: space-around;
+    border: 10px white outset;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 25px 25px;
+    margin-inline-start: 25px;
+    margin-inline-end: 25px;
+}
+
+.planets img{
+    width:10em;
+}
+
+.planets p{
+    text-align: center;
+}
+
+.venus1{
+    display: flex;
+    flex-direction: column;
+    border: 5px white groove;
+}
+
+.mars1{
+    display: flex;
+    flex-direction: column;
+    border:5px white groove;
+}
+
+.venus1 img{
+    border-radius: 50%;
+}
+
+.mars1 img{
+    border-radius: 50%;
+}
+
+.section2{
+    border: 10px white outset;
+    background-color: #cfcfcf;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    padding: 15px 15px;
+    margin-inline-start: 25px;
+    margin-inline-end: 25px;
+}
+.section3{
+    border: 10px white outset;
+    background-color: #cfcfcf;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-inline-start: 25px;
+    margin-inline-end: 25px;
+}
+.button1{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 5px white outset;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #cfcfcf;
+}
+
+button:active{
+    border: 5px white inset;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    padding-left: 35px;
+    padding-right: 29px;
+    padding-top: 18px;
+    padding-bottom: 12px;
+
+}
+
+button:hover{
+    background-color: #dfdfdf;
+}
+
+.container{
+    margin: 20px;
+    margin-top: 300px;
+    display: grid;
+    gap: 15px;
+}
+
+.box{
+    border: 3px white inset;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.two{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.four{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.five{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.three{
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+.eight{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+}
+
+.six{
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+.seven{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.eight{
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+}
+
+
+
+.containerb{
+    margin: 20px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    display: grid;
+    grid-gap: 15px;
+}
+
+.boxb{
+    border: 3px white inset;
+    padding: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.oneb{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.twob{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.threeb{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.fourb{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.fiveb{
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+.sixb{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+}
+
+.sevenb{
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+}
+
+.eightb{
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+}
+
+
+/* @media screen {
+
+    display: none;
+
+} */
+
+
+th, td{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0px;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
