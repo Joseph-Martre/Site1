@@ -11,27 +11,99 @@ body{
 
 .topbanner{
 display: flex;
-justify-content: space-between;
-}
-
-nav ul li{
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a{
-    color: grey;
-    text-decoration: none;
-}
-
-nav ul li a:hover{
-    text-decoration: underline;
+justify-content: space-around;
 }
 
 .mainlogo{
     width: 6em;
 }
 
+.desktop-navbar{
+    display: block;
+}
+
+.mobile-navbar{
+    display: none;
+}
+
+@media (max-width: 600px){
+    
+    .desktop-navbar{
+        display: none;
+    }
+
+    .mobile-navbar{
+        display: block;
+    }
+
+}
+
+
+
+/* desktop header section */
+
+.desktop-navbar nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+.desktop-navbar nav ul li a{
+    color: grey;
+    text-decoration: none;
+}
+
+.desktop-navbar nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/* mobile header section */
+
+#dummy-burger-checkbox{
+    display: none;
+}
+
+
+.burger-triggerbox{
+    height: 50px;
+    width: 50px;
+    background-image: url(img/burgercapture3.PNG);
+    background-size: cover;
+}
+
+.burger-triggerbox:hover{
+    cursor: pointer;
+}
+
+#dummy-burger-checkbox:checked ~ label .burger-triggerbox{
+    background-image: url(img/crosscapture3.PNG);
+}
+
+.burger-menu-nav{
+    opacity: 0%;
+    transition: opacity 0.5s;
+    position: absolute;
+}
+
+#dummy-burger-checkbox:checked ~ .burger-menu-nav{
+    opacity: 100%;
+}
+
+.burgerlink{
+    color:gray;
+    text-decoration: none;
+}
+
+.burgerlink:hover{
+    text-decoration: underline;
+}
+
+.burger-menu-nav nav ul li{
+    list-style-type: none;
+}
+
+
+
+/* first section of the body */
 
 .planets{
     display: flex;
@@ -247,12 +319,26 @@ button:hover{
 
 th, td{
     padding: 10px;
-    border: 1px solid black;
+    border: 3px inset white;
     margin: 0px;
+    text-align: center;
+}
+
+table caption{
+    margin-bottom: 10px;
 }
 
 table{
     margin: auto;
-    border-collapse: collapse;
+    border-spacing: 0px;
     margin-bottom: 100px;
 }
+
+.first-form-section{
+    margin: 100px;
+}
+
+.second-form-section{
+    margin: 100px;
+}
+
